@@ -1,0 +1,17 @@
+# dataset (re-downloadable, see README) and build output
+data/
+mcu/build/
+__pycache__/
+*.pyc
+# superseded runs, duplicate logs, NPU check scratch output
+runs/archive_selection_by_plain_acc/
+runs/*.out
+runs/*/npu/npu_0.bin
+runs/*/npu/*.log
+runs/*/npu/inputs.f32
+# personal study notes and their analysis scripts
+STUDY_NOTES.md
+QA_NOTES.md
+tools/pitch_demo.py
+tools/pitch_lowbands.py
+report_figs/pitch_demo.png

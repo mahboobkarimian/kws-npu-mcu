@@ -1,0 +1,373 @@
+{
+ "task": "commands12",
+ "classes": [
+  "_silence_",
+  "_unknown_",
+  "yes",
+  "no",
+  "up",
+  "down",
+  "left",
+  "right",
+  "on",
+  "off",
+  "stop",
+  "go"
+ ],
+ "official": {
+  "n": 4890,
+  "float": 0.9423312883435583,
+  "int8": 0.9384458077709611,
+  "int8_equals_integer_ref": 1.0
+ },
+ "test_split": {
+  "n": 12005,
+  "float": 0.9020408163265307,
+  "int8": 0.9074552269887547
+ },
+ "confusion_int8": [
+  [
+   834,
+   105,
+   5,
+   4,
+   8,
+   31,
+   0,
+   0,
+   1,
+   5,
+   6,
+   1
+  ],
+  [
+   1,
+   6232,
+   26,
+   69,
+   50,
+   70,
+   112,
+   122,
+   57,
+   23,
+   73,
+   96
+  ],
+  [
+   0,
+   5,
+   410,
+   0,
+   0,
+   2,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   12,
+   1,
+   384,
+   0,
+   0,
+   2,
+   1,
+   0,
+   1,
+   0,
+   4
+  ],
+  [
+   0,
+   11,
+   0,
+   0,
+   397,
+   3,
+   0,
+   0,
+   3,
+   6,
+   4,
+   1
+  ],
+  [
+   0,
+   5,
+   2,
+   16,
+   0,
+   373,
+   1,
+   0,
+   1,
+   0,
+   2,
+   6
+  ],
+  [
+   0,
+   5,
+   8,
+   1,
+   0,
+   0,
+   398,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   8,
+   0,
+   0,
+   0,
+   1,
+   2,
+   383,
+   0,
+   0,
+   1,
+   1
+  ],
+  [
+   0,
+   8,
+   0,
+   0,
+   2,
+   4,
+   1,
+   0,
+   373,
+   6,
+   1,
+   1
+  ],
+  [
+   0,
+   6,
+   0,
+   1,
+   20,
+   0,
+   0,
+   1,
+   2,
+   367,
+   0,
+   5
+  ],
+  [
+   0,
+   2,
+   0,
+   1,
+   11,
+   2,
+   0,
+   0,
+   0,
+   0,
+   391,
+   4
+  ],
+  [
+   0,
+   12,
+   3,
+   16,
+   3,
+   9,
+   2,
+   1,
+   0,
+   1,
+   3,
+   352
+  ]
+ ],
+ "per_class": {
+  "_silence_": {
+   "recall": 0.834,
+   "precision": 0.9988023952095808,
+   "n": 1000
+  },
+  "_unknown_": {
+   "recall": 0.8991487519838407,
+   "precision": 0.9720792388082983,
+   "n": 6931
+  },
+  "yes": {
+   "recall": 0.9785202863961814,
+   "precision": 0.9010989010989011,
+   "n": 419
+  },
+  "no": {
+   "recall": 0.9481481481481482,
+   "precision": 0.7804878048780488,
+   "n": 405
+  },
+  "up": {
+   "recall": 0.9341176470588235,
+   "precision": 0.8085539714867617,
+   "n": 425
+  },
+  "down": {
+   "recall": 0.9187192118226601,
+   "precision": 0.7535353535353535,
+   "n": 406
+  },
+  "left": {
+   "recall": 0.9660194174757282,
+   "precision": 0.7653846153846153,
+   "n": 412
+  },
+  "right": {
+   "recall": 0.9671717171717171,
+   "precision": 0.7539370078740157,
+   "n": 396
+  },
+  "on": {
+   "recall": 0.9419191919191919,
+   "precision": 0.8535469107551488,
+   "n": 396
+  },
+  "off": {
+   "recall": 0.9129353233830846,
+   "precision": 0.8973105134474327,
+   "n": 402
+  },
+  "stop": {
+   "recall": 0.9513381995133819,
+   "precision": 0.8128898128898129,
+   "n": 411
+  },
+  "go": {
+   "recall": 0.8756218905472637,
+   "precision": 0.7473460721868365,
+   "n": 402
+  }
+ },
+ "noise": {
+  "clean": {
+   "float": 0.9059518400726942,
+   "int8": 0.9141299409359382
+  },
+  "20 dB": {
+   "float": 0.9037710131758292,
+   "int8": 0.909041344843253
+  },
+  "10 dB": {
+   "float": 0.8650613357564744,
+   "int8": 0.8748750567923671
+  },
+  "5 dB": {
+   "float": 0.8274420717855521,
+   "int8": 0.8426169922762381
+  },
+  "0 dB": {
+   "float": 0.7501135847342117,
+   "int8": 0.7729213993639255
+  }
+ },
+ "f0_percentiles": [
+  86.60399627685547,
+  106.66667175292969,
+  129.03225708007812,
+  170.21275329589844,
+  242.42425537109375
+ ],
+ "pitch": {
+  "0-100 Hz": {
+   "n": 1496,
+   "float": 0.9391711229946524,
+   "int8": 0.9411764705882353
+  },
+  "100-130 Hz": {
+   "n": 3230,
+   "float": 0.9204334365325078,
+   "int8": 0.926625386996904
+  },
+  "130-170 Hz": {
+   "n": 2312,
+   "float": 0.8832179930795848,
+   "int8": 0.8914359861591695
+  },
+  "170-220 Hz": {
+   "n": 1535,
+   "float": 0.9140065146579804,
+   "int8": 0.9250814332247557
+  },
+  "220-600 Hz": {
+   "n": 853,
+   "float": 0.861664712778429,
+   "int8": 0.8792497069167644
+  },
+  "f0 not found": {
+   "n": 1579,
+   "float": 0.8942368587713743,
+   "int8": 0.9043698543381887
+  }
+ },
+ "speed": {
+  "x0.8": {
+   "float": 0.8358927760109042,
+   "int8": 0.847160381644707
+  },
+  "x0.9": {
+   "float": 0.8963198546115402,
+   "int8": 0.9079509313948205
+  },
+  "x1.0": {
+   "float": 0.9059518400726942,
+   "int8": 0.9141299409359382
+  },
+  "x1.12": {
+   "float": 0.8773284870513403,
+   "int8": 0.8845979100408905
+  },
+  "x1.25": {
+   "float": 0.7963652885052249,
+   "int8": 0.8059064061790095
+  }
+ },
+ "npu_check": {
+  "n": 4890,
+  "logits_identical_pct": 100.0,
+  "inputs_identical_pct": 100.0,
+  "max_diff": 0,
+  "compile": [
+   "compile: OK",
+   "  graph after compile (EPContext = NPU part, the rest runs on CPU): {'QuantizeLinear': 1, 'com.microsoft::EPContext': 1, 'DequantizeLinear': 1}",
+   "  output: runs/commands12/npu/dscnn_int8.phx18_ctx.onnx"
+  ],
+  "run": [
+   "RESULT npu: run OK, 0.72 ms per frame (4890 frames, max 13.084607 ms)"
+  ],
+  "npu_official_test_acc": 0.9384458077709611
+ },
+ "mcu_check": {
+  "net_identical_pct": 100.0,
+  "net_n": 4890,
+  "host_us": "RESULT 4890 inputs; host time per inference: network 1435.8 us",
+  "fe_feat_identical_pct": 99.99912357581069,
+  "fe_feat_maxdiff": 1,
+  "fe_clip_logits_identical_pct": 99.61145194274027,
+  "fe_argmax_agree_pct": 100.0,
+  "fe_n": 4890,
+  "fe_host": "RESULT 4890 inputs; host time per inference: network 1450.3 us, front end 616.5 us per 1 s clip (49 frames)",
+  "sizes": {
+   "cortex-m4": "build/cm4/dscnn_int8.o  :\n.text                            0      0\n.text.dscnn_run                892      0\n.ARM.exidx.text.dscnn_run        8      0\nTotal                         1013\nbuild/cm4/kws_frontend.o  :\n.text                                    0      0\n.text.kws_frontend_init                280      0\n.ARM.exidx.text.kws_frontend_init        8      0\n.text.kws_mfcc_frame                   776      0\n.ARM.exidx.text.kws_mfcc_frame           8      0\n.text.kws_mfcc_clip                     30      0\n.ARM.exidx.text.kws_mfcc_clip            8      0\n.text.kws_stream_init                   10      0\n.ARM.exidx.text.kws_stream_init          8      0\n.text.kws_stream_push                   80      0\n.ARM.exidx.text.kws_stream_push          8      0\n.bss.tw_re                            2048      0\n.bss.tw_im                            2048      0\n.bss.bitrev                           2048      0\n.bss.kws_mfcc_frame.re                4096      0\n.bss.kws_mfcc_frame.im                4096      0\nTotal                                15665\nbuild/cm4/kws_frontend_tables.o  :\n.text                        0      0\n.rodata.kws_hann          2560      0\n.rodata.kws_mel_start       80      0\n.rodata.kws_mel_len         80      0\n.rodata.kws_mel_off         80      0\n.rodata.kws_mel_w         1972      0\n.rodata.kws_dct           1600      0\n.rodata.kws_mean            40      0\n.rodata.kws_std             40      0\nTotal                     6563\nbuild/cm4/kws_model_data.o  :\n.text                          0      0\n.rodata.str1.1               154      0\n.rodata.KWS_CLASS_NAMES       48      0\n.rodata.stem_w              2304      0\n.rodata.stem_b                64      0\n.rodata.blocks_0_w           576      0\n.rodata.blocks_0_b            64      0\n.rodata.blocks_1_w          4096      0\n.rodata.blocks_1_b            64      0\n.rodata.blocks_2_w           576      0\n.rodata.blocks_2_b            64      0\n.rodata.blocks_3_w          4096      0\n.rodata.blocks_3_b            64      0\n.rodata.blocks_4_w           576      0\n.rodata.blocks_4_b            64      0\n.rodata.blocks_5_w          4096      0\n.rodata.blocks_5_b            64      0\n.rodata.blocks_6_w           576      0\n.rodata.blocks_6_b            64      0\n.rodata.blocks_7_w          4096      0\n.rodata.blocks_7_b            64      0\n.rodata.classifier_w         768      0\n.rodata.classifier_b          12      0\n.rodata.KWS_LAYERS           836      0\nTotal                      23517\n",
+   "cortex-m7": "build/cm7/dscnn_int8.o  :\n.text                            0      0\n.text.dscnn_run                952      0\n.ARM.exidx.text.dscnn_run        8      0\nTotal                         1071\nbuild/cm7/kws_frontend.o  :\n.text                                    0      0\n.text.kws_frontend_init                200      0\n.ARM.exidx.text.kws_frontend_init        8      0\n.text.kws_mfcc_frame                   768      0\n.ARM.exidx.text.kws_mfcc_frame           8      0\n.text.kws_mfcc_clip                     30      0\n.ARM.exidx.text.kws_mfcc_clip            8      0\n.text.kws_stream_init                   10      0\n.ARM.exidx.text.kws_stream_init          8      0\n.text.kws_stream_push                   82      0\n.ARM.exidx.text.kws_stream_push          8      0\n.bss.tw_re                            2048      0\n.bss.tw_im                            2048      0\n.bss.bitrev                           2048      0\n.bss.kws_mfcc_frame.re                4096      0\n.bss.kws_mfcc_frame.im                4096      0\nTotal                                15577\nbuild/cm7/kws_frontend_tables.o  :\n.text                        0      0\n.rodata.kws_hann          2560      0\n.rodata.kws_mel_start       80      0\n.rodata.kws_mel_len         80      0\n.rodata.kws_mel_off         80      0\n.rodata.kws_mel_w         1972      0\n.rodata.kws_dct           1600      0\n.rodata.kws_mean            40      0\n.rodata.kws_std             40      0\nTotal                     6561\nbuild/cm7/kws_model_data.o  :\n.text                          0      0\n.rodata.str1.1               154      0\n.rodata.KWS_CLASS_NAMES       48      0\n.rodata.stem_w              2304      0\n.rodata.stem_b                64      0\n.rodata.blocks_0_w           576      0\n.rodata.blocks_0_b            64      0\n.rodata.blocks_1_w          4096      0\n.rodata.blocks_1_b            64      0\n.rodata.blocks_2_w           576      0\n.rodata.blocks_2_b            64      0\n.rodata.blocks_3_w          4096      0\n.rodata.blocks_3_b            64      0\n.rodata.blocks_4_w           576      0\n.rodata.blocks_4_b            64      0\n.rodata.blocks_5_w          4096      0\n.rodata.blocks_5_b            64      0\n.rodata.blocks_6_w           576      0\n.rodata.blocks_6_b            64      0\n.rodata.blocks_7_w          4096      0\n.rodata.blocks_7_b            64      0\n.rodata.classifier_w         768      0\n.rodata.classifier_b          12      0\n.rodata.KWS_LAYERS           836      0\nTotal                      23515\n"
+  }
+ }
+}

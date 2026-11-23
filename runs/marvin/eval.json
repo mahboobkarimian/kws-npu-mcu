@@ -1,0 +1,482 @@
+{
+ "task": "marvin",
+ "classes": [
+  "_silence_",
+  "_unknown_",
+  "marvin"
+ ],
+ "test_split": {
+  "n": 12005,
+  "float": 0.9745106205747606,
+  "int8": 0.9744273219491878
+ },
+ "confusion_int8": [
+  [
+   818,
+   180,
+   2
+  ],
+  [
+   1,
+   10691,
+   118
+  ],
+  [
+   0,
+   6,
+   189
+  ]
+ ],
+ "per_class": {
+  "_silence_": {
+   "recall": 0.818,
+   "precision": 0.9987789987789988,
+   "n": 1000
+  },
+  "_unknown_": {
+   "recall": 0.9889916743755782,
+   "precision": 0.9828996966075204,
+   "n": 10810
+  },
+  "marvin": {
+   "recall": 0.9692307692307692,
+   "precision": 0.6116504854368932,
+   "n": 195
+  }
+ },
+ "noise": {
+  "clean": {
+   "float": 0.988914129940936,
+   "int8": 0.9886415265788278
+  },
+  "20 dB": {
+   "float": 0.994002726033621,
+   "int8": 0.993730122671513
+  },
+  "10 dB": {
+   "float": 0.9917310313493867,
+   "int8": 0.9912766924125398
+  },
+  "5 dB": {
+   "float": 0.9840981372103589,
+   "int8": 0.9827351203998183
+  },
+  "0 dB": {
+   "float": 0.9702862335302136,
+   "int8": 0.9674693321217628
+  }
+ },
+ "f0_percentiles": [
+  86.60399627685547,
+  106.66667175292969,
+  129.03225708007812,
+  170.21275329589844,
+  242.42425537109375
+ ],
+ "pitch": {
+  "0-100 Hz": {
+   "n": 1496,
+   "float": 0.9953208556149733,
+   "int8": 0.9953208556149733
+  },
+  "100-130 Hz": {
+   "n": 3230,
+   "float": 0.9928792569659443,
+   "int8": 0.9925696594427245
+  },
+  "130-170 Hz": {
+   "n": 2312,
+   "float": 0.9809688581314879,
+   "int8": 0.981401384083045
+  },
+  "170-220 Hz": {
+   "n": 1535,
+   "float": 0.990228013029316,
+   "int8": 0.9895765472312703
+  },
+  "220-600 Hz": {
+   "n": 853,
+   "float": 0.9765533411488863,
+   "int8": 0.9753810082063306
+  },
+  "f0 not found": {
+   "n": 1579,
+   "float": 0.9917669411019633,
+   "int8": 0.9911336288790373
+  }
+ },
+ "speed": {
+  "x0.8": {
+   "float": 0.983643798273512,
+   "int8": 0.9824625170377101
+  },
+  "x0.9": {
+   "float": 0.9872785097682871,
+   "int8": 0.9865515674693321
+  },
+  "x1.0": {
+   "float": 0.988914129940936,
+   "int8": 0.9886415265788278
+  },
+  "x1.12": {
+   "float": 0.9890958655156747,
+   "int8": 0.9883689232167197
+  },
+  "x1.25": {
+   "float": 0.987005906406179,
+   "int8": 0.9869150386188096
+  }
+ },
+ "streaming": {
+  "clean": {
+   "hours": 3.0569444444444445,
+   "n_keywords": 195,
+   "n_windows": 110041,
+   "curve": [
+    {
+     "threshold": 0.05,
+     "frr": 0.00512820512820511,
+     "fa": 2172,
+     "fa_per_hour": 710.5134029986369
+    },
+    {
+     "threshold": 0.1,
+     "frr": 0.00512820512820511,
+     "fa": 1442,
+     "fa_per_hour": 471.71285779191277
+    },
+    {
+     "threshold": 0.15,
+     "frr": 0.00512820512820511,
+     "fa": 1084,
+     "fa_per_hour": 354.60245343025895
+    },
+    {
+     "threshold": 0.2,
+     "frr": 0.00512820512820511,
+     "fa": 824,
+     "fa_per_hour": 269.5502044525216
+    },
+    {
+     "threshold": 0.25,
+     "frr": 0.00512820512820511,
+     "fa": 668,
+     "fa_per_hour": 218.51885506587914
+    },
+    {
+     "threshold": 0.3,
+     "frr": 0.00512820512820511,
+     "fa": 537,
+     "fa_per_hour": 175.6656065424807
+    },
+    {
+     "threshold": 0.35,
+     "frr": 0.00512820512820511,
+     "fa": 438,
+     "fa_per_hour": 143.28032712403453
+    },
+    {
+     "threshold": 0.4,
+     "frr": 0.00512820512820511,
+     "fa": 363,
+     "fa_per_hour": 118.74602453430259
+    },
+    {
+     "threshold": 0.45,
+     "frr": 0.01025641025641022,
+     "fa": 303,
+     "fa_per_hour": 99.11858246251704
+    },
+    {
+     "threshold": 0.5,
+     "frr": 0.01538461538461533,
+     "fa": 249,
+     "fa_per_hour": 81.45388459791005
+    },
+    {
+     "threshold": 0.55,
+     "frr": 0.02051282051282055,
+     "fa": 214,
+     "fa_per_hour": 70.00454338936846
+    },
+    {
+     "threshold": 0.6,
+     "frr": 0.03076923076923077,
+     "fa": 184,
+     "fa_per_hour": 60.190822353475696
+    },
+    {
+     "threshold": 0.65,
+     "frr": 0.03076923076923077,
+     "fa": 157,
+     "fa_per_hour": 51.35847342117219
+    },
+    {
+     "threshold": 0.7,
+     "frr": 0.03076923076923077,
+     "fa": 132,
+     "fa_per_hour": 43.180372557928216
+    },
+    {
+     "threshold": 0.75,
+     "frr": 0.03076923076923077,
+     "fa": 109,
+     "fa_per_hour": 35.65651976374375
+    },
+    {
+     "threshold": 0.8,
+     "frr": 0.04102564102564099,
+     "fa": 85,
+     "fa_per_hour": 27.805542935029532
+    },
+    {
+     "threshold": 0.85,
+     "frr": 0.0461538461538461,
+     "fa": 67,
+     "fa_per_hour": 21.917310313493868
+    },
+    {
+     "threshold": 0.9,
+     "frr": 0.05128205128205132,
+     "fa": 45,
+     "fa_per_hour": 14.720581553839164
+    },
+    {
+     "threshold": 0.95,
+     "frr": 0.06153846153846154,
+     "fa": 22,
+     "fa_per_hour": 7.196728759654702
+    },
+    {
+     "threshold": 0.97,
+     "frr": 0.07692307692307687,
+     "fa": 16,
+     "fa_per_hour": 5.233984552476147
+    },
+    {
+     "threshold": 0.98,
+     "frr": 0.0871794871794872,
+     "fa": 10,
+     "fa_per_hour": 3.271240345297592
+    },
+    {
+     "threshold": 0.99,
+     "frr": 0.10769230769230764,
+     "fa": 5,
+     "fa_per_hour": 1.635620172648796
+    },
+    {
+     "threshold": 0.995,
+     "frr": 0.11794871794871797,
+     "fa": 4,
+     "fa_per_hour": 1.3084961381190368
+    }
+   ],
+   "fa_words_at_0_95": {
+    "wow": 3,
+    "backward": 2,
+    "five": 2,
+    "nine": 2,
+    "bird": 2,
+    "stop": 1,
+    "eight": 1,
+    "on": 1,
+    "cat": 1,
+    "four": 1,
+    "forward": 1,
+    "dog": 1,
+    "right": 1,
+    "up": 1,
+    "no": 1,
+    "three": 1
+   }
+  },
+  "10 dB": {
+   "hours": 3.0569444444444445,
+   "n_keywords": 195,
+   "n_windows": 110041,
+   "curve": [
+    {
+     "threshold": 0.05,
+     "frr": 0.02564102564102566,
+     "fa": 2199,
+     "fa_per_hour": 719.3457519309404
+    },
+    {
+     "threshold": 0.1,
+     "frr": 0.03076923076923077,
+     "fa": 1306,
+     "fa_per_hour": 427.22398909586553
+    },
+    {
+     "threshold": 0.15,
+     "frr": 0.03076923076923077,
+     "fa": 912,
+     "fa_per_hour": 298.3371194911404
+    },
+    {
+     "threshold": 0.2,
+     "frr": 0.03589743589743588,
+     "fa": 666,
+     "fa_per_hour": 217.86460699681962
+    },
+    {
+     "threshold": 0.25,
+     "frr": 0.04102564102564099,
+     "fa": 514,
+     "fa_per_hour": 168.14175374829622
+    },
+    {
+     "threshold": 0.3,
+     "frr": 0.06153846153846154,
+     "fa": 412,
+     "fa_per_hour": 134.7751022262608
+    },
+    {
+     "threshold": 0.35,
+     "frr": 0.07179487179487176,
+     "fa": 317,
+     "fa_per_hour": 103.69831894593366
+    },
+    {
+     "threshold": 0.4,
+     "frr": 0.08205128205128209,
+     "fa": 264,
+     "fa_per_hour": 86.36074511585643
+    },
+    {
+     "threshold": 0.45,
+     "frr": 0.08205128205128209,
+     "fa": 226,
+     "fa_per_hour": 73.93003180372558
+    },
+    {
+     "threshold": 0.5,
+     "frr": 0.0871794871794872,
+     "fa": 182,
+     "fa_per_hour": 59.536574284416176
+    },
+    {
+     "threshold": 0.55,
+     "frr": 0.0871794871794872,
+     "fa": 150,
+     "fa_per_hour": 49.06860517946388
+    },
+    {
+     "threshold": 0.6,
+     "frr": 0.0871794871794872,
+     "fa": 116,
+     "fa_per_hour": 37.946388005452064
+    },
+    {
+     "threshold": 0.65,
+     "frr": 0.09230769230769231,
+     "fa": 104,
+     "fa_per_hour": 34.02089959109496
+    },
+    {
+     "threshold": 0.7,
+     "frr": 0.09230769230769231,
+     "fa": 81,
+     "fa_per_hour": 26.497046796910496
+    },
+    {
+     "threshold": 0.75,
+     "frr": 0.09743589743589742,
+     "fa": 66,
+     "fa_per_hour": 21.590186278964108
+    },
+    {
+     "threshold": 0.8,
+     "frr": 0.11282051282051286,
+     "fa": 51,
+     "fa_per_hour": 16.68332576101772
+    },
+    {
+     "threshold": 0.85,
+     "frr": 0.11794871794871797,
+     "fa": 36,
+     "fa_per_hour": 11.776465243071332
+    },
+    {
+     "threshold": 0.9,
+     "frr": 0.11794871794871797,
+     "fa": 25,
+     "fa_per_hour": 8.17810086324398
+    },
+    {
+     "threshold": 0.95,
+     "frr": 0.1384615384615384,
+     "fa": 14,
+     "fa_per_hour": 4.579736483416629
+    },
+    {
+     "threshold": 0.97,
+     "frr": 0.15384615384615385,
+     "fa": 8,
+     "fa_per_hour": 2.6169922762380735
+    },
+    {
+     "threshold": 0.98,
+     "frr": 0.19487179487179485,
+     "fa": 5,
+     "fa_per_hour": 1.635620172648796
+    },
+    {
+     "threshold": 0.99,
+     "frr": 0.2205128205128205,
+     "fa": 4,
+     "fa_per_hour": 1.3084961381190368
+    },
+    {
+     "threshold": 0.995,
+     "frr": 0.24102564102564106,
+     "fa": 1,
+     "fa_per_hour": 0.3271240345297592
+    }
+   ],
+   "fa_words_at_0_95": {
+    "right": 3,
+    "backward": 3,
+    "bird": 1,
+    "five": 1,
+    "wow": 1,
+    "cat": 1,
+    "forward": 1,
+    "four": 1,
+    "nine": 1,
+    "one": 1
+   }
+  }
+ },
+ "npu_check": {
+  "n": 4890,
+  "logits_identical_pct": 100.0,
+  "inputs_identical_pct": 100.0,
+  "max_diff": 0,
+  "compile": [
+   "compile: OK",
+   "  graph after compile (EPContext = NPU part, the rest runs on CPU): {'QuantizeLinear': 1, 'com.microsoft::EPContext': 1, 'DequantizeLinear': 1}",
+   "  output: runs/marvin/npu/dscnn_int8.phx18_ctx.onnx"
+  ],
+  "run": [
+   "RESULT npu: run OK, 0.63 ms per frame (4890 frames, max 1.194363 ms)"
+  ],
+  "npu_official_test_acc": null
+ },
+ "mcu_check": {
+  "net_identical_pct": 100.0,
+  "net_n": 4890,
+  "host_us": "RESULT 4890 inputs; host time per inference: network 1562.3 us",
+  "fe_feat_identical_pct": 99.99954092066274,
+  "fe_feat_maxdiff": 1,
+  "fe_clip_logits_identical_pct": 99.97955010224949,
+  "fe_argmax_agree_pct": 100.0,
+  "fe_n": 4890,
+  "fe_host": "RESULT 4890 inputs; host time per inference: network 1611.2 us, front end 546.8 us per 1 s clip (49 frames)",
+  "sizes": {
+   "cortex-m4": "build/cm4/dscnn_int8.o  :\n.text                            0      0\n.text.dscnn_run                892      0\n.ARM.exidx.text.dscnn_run        8      0\nTotal                         1013\nbuild/cm4/kws_frontend.o  :\n.text                                    0      0\n.text.kws_frontend_init                280      0\n.ARM.exidx.text.kws_frontend_init        8      0\n.text.kws_mfcc_frame                   776      0\n.ARM.exidx.text.kws_mfcc_frame           8      0\n.text.kws_mfcc_clip                     30      0\n.ARM.exidx.text.kws_mfcc_clip            8      0\n.text.kws_stream_init                   10      0\n.ARM.exidx.text.kws_stream_init          8      0\n.text.kws_stream_push                   80      0\n.ARM.exidx.text.kws_stream_push          8      0\n.bss.tw_re                            2048      0\n.bss.tw_im                            2048      0\n.bss.bitrev                           2048      0\n.bss.kws_mfcc_frame.re                4096      0\n.bss.kws_mfcc_frame.im                4096      0\nTotal                                15665\nbuild/cm4/kws_frontend_tables.o  :\n.text                        0      0\n.rodata.kws_hann          2560      0\n.rodata.kws_mel_start       80      0\n.rodata.kws_mel_len         80      0\n.rodata.kws_mel_off         80      0\n.rodata.kws_mel_w         1972      0\n.rodata.kws_dct           1600      0\n.rodata.kws_mean            40      0\n.rodata.kws_std             40      0\nTotal                     6563\nbuild/cm4/kws_model_data.o  :\n.text                             0      0\n.rodata.str1.1                  184      0\n.rodata.KWS_CLASS_NAMES          12      0\n.rodata.stem_w                 2304      0\n.rodata.stem_b                   64      0\n.rodata.block0_depthwise_w      576      0\n.rodata.block0_depthwise_b       64      0\n.rodata.block0_pointwise_w     4096      0\n.rodata.block0_pointwise_b       64      0\n.rodata.block1_depthwise_w      576      0\n.rodata.block1_depthwise_b       64      0\n.rodata.block1_pointwise_w     4096      0\n.rodata.block1_pointwise_b       64      0\n.rodata.block2_depthwise_w      576      0\n.rodata.block2_depthwise_b       64      0\n.rodata.block2_pointwise_w     4096      0\n.rodata.block2_pointwise_b       64      0\n.rodata.block3_depthwise_w      576      0\n.rodata.block3_depthwise_b       64      0\n.rodata.block3_pointwise_w     4096      0\n.rodata.block3_pointwise_b       64      0\n.rodata.classifier_w            192      0\n.rodata.classifier_b              3      0\n.rodata.KWS_LAYERS              836      0\nTotal                         22926\n",
+   "cortex-m7": "build/cm7/dscnn_int8.o  :\n.text                            0      0\n.text.dscnn_run                952      0\n.ARM.exidx.text.dscnn_run        8      0\nTotal                         1071\nbuild/cm7/kws_frontend.o  :\n.text                                    0      0\n.text.kws_frontend_init                200      0\n.ARM.exidx.text.kws_frontend_init        8      0\n.text.kws_mfcc_frame                   768      0\n.ARM.exidx.text.kws_mfcc_frame           8      0\n.text.kws_mfcc_clip                     30      0\n.ARM.exidx.text.kws_mfcc_clip            8      0\n.text.kws_stream_init                   10      0\n.ARM.exidx.text.kws_stream_init          8      0\n.text.kws_stream_push                   82      0\n.ARM.exidx.text.kws_stream_push          8      0\n.bss.tw_re                            2048      0\n.bss.tw_im                            2048      0\n.bss.bitrev                           2048      0\n.bss.kws_mfcc_frame.re                4096      0\n.bss.kws_mfcc_frame.im                4096      0\nTotal                                15577\nbuild/cm7/kws_frontend_tables.o  :\n.text                        0      0\n.rodata.kws_hann          2560      0\n.rodata.kws_mel_start       80      0\n.rodata.kws_mel_len         80      0\n.rodata.kws_mel_off         80      0\n.rodata.kws_mel_w         1972      0\n.rodata.kws_dct           1600      0\n.rodata.kws_mean            40      0\n.rodata.kws_std             40      0\nTotal                     6561\nbuild/cm7/kws_model_data.o  :\n.text                             0      0\n.rodata.str1.1                  184      0\n.rodata.KWS_CLASS_NAMES          12      0\n.rodata.stem_w                 2304      0\n.rodata.stem_b                   64      0\n.rodata.block0_depthwise_w      576      0\n.rodata.block0_depthwise_b       64      0\n.rodata.block0_pointwise_w     4096      0\n.rodata.block0_pointwise_b       64      0\n.rodata.block1_depthwise_w      576      0\n.rodata.block1_depthwise_b       64      0\n.rodata.block1_pointwise_w     4096      0\n.rodata.block1_pointwise_b       64      0\n.rodata.block2_depthwise_w      576      0\n.rodata.block2_depthwise_b       64      0\n.rodata.block2_pointwise_w     4096      0\n.rodata.block2_pointwise_b       64      0\n.rodata.block3_depthwise_w      576      0\n.rodata.block3_depthwise_b       64      0\n.rodata.block3_pointwise_w     4096      0\n.rodata.block3_pointwise_b       64      0\n.rodata.classifier_w            192      0\n.rodata.classifier_b              3      0\n.rodata.KWS_LAYERS              836      0\nTotal                         22924\n"
+  }
+ }
+}

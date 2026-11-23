@@ -1,0 +1,15 @@
+{
+ "n": 4890,
+ "logits_identical_pct": 100.0,
+ "inputs_identical_pct": 100.0,
+ "max_diff": 0,
+ "compile": [
+  "compile: OK",
+  "  graph after compile (EPContext = NPU part, the rest runs on CPU): {'QuantizeLinear': 1, 'com.microsoft::EPContext': 1, 'DequantizeLinear': 1}",
+  "  output: runs/commands12/npu/dscnn_int8.phx18_ctx.onnx"
+ ],
+ "run": [
+  "RESULT npu: run OK, 0.72 ms per frame (4890 frames, max 13.084607 ms)"
+ ],
+ "npu_official_test_acc": 0.9384458077709611
+}

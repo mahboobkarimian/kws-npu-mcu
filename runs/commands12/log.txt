@@ -1,0 +1,56 @@
+task commands12: classes ['_silence_', '_unknown_', 'yes', 'no', 'up', 'down', 'left', 'right', 'on', 'off', 'stop', 'go']; args {'task': 'commands12', 'out': 'runs/commands12', 'data': 'data/packed', 'epochs': 40, 'qat_epochs': 10, 'bs': 128, 'lr': 0.003, 'qat_lr': 0.0002, 'threads': 8, 'workers': 6, 'seed': 0}
+MFCC mean [-12.8    2.73  -0.07  -0.47   0.1   -0.04   0.12   0.02  -0.1   -0.38]  std [23.39  5.79  3.92  2.89  2.46  1.94  1.77  1.59  1.5   1.36]
+validation items 10381 (all val clips + 400 silence)
+DS-CNN: 22348 parameters (after BN folding), 2.62 M MAC per inference
+float ep  0  loss 1.6920  train acc 0.4455  val bal 0.8029  val acc 0.5957  (best bal 0.8029)  lr 2.89e-03  21 s
+float ep  1  loss 0.6233  train acc 0.7951  val bal 0.8541  val acc 0.6943  (best bal 0.8541)  lr 2.98e-03  20 s
+float ep  2  loss 0.4958  train acc 0.8364  val bal 0.8867  val acc 0.7351  (best bal 0.8867)  lr 2.96e-03  20 s
+float ep  3  loss 0.4494  train acc 0.8521  val bal 0.8928  val acc 0.8283  (best bal 0.8928)  lr 2.93e-03  20 s
+float ep  4  loss 0.4204  train acc 0.8601  val bal 0.9054  val acc 0.8188  (best bal 0.9054)  lr 2.89e-03  20 s
+float ep  5  loss 0.4035  train acc 0.8656  val bal 0.9079  val acc 0.8557  (best bal 0.9079)  lr 2.84e-03  20 s
+float ep  6  loss 0.3809  train acc 0.8727  val bal 0.9115  val acc 0.8115  (best bal 0.9115)  lr 2.78e-03  20 s
+float ep  7  loss 0.3717  train acc 0.8771  val bal 0.9169  val acc 0.8557  (best bal 0.9169)  lr 2.72e-03  21 s
+float ep  8  loss 0.3531  train acc 0.8821  val bal 0.9197  val acc 0.8647  (best bal 0.9197)  lr 2.64e-03  21 s
+float ep  9  loss 0.3516  train acc 0.8832  val bal 0.9147  val acc 0.8769  (best bal 0.9197)  lr 2.56e-03  21 s
+float ep 10  loss 0.3423  train acc 0.8854  val bal 0.9221  val acc 0.8945  (best bal 0.9221)  lr 2.48e-03  20 s
+float ep 11  loss 0.3335  train acc 0.8874  val bal 0.9240  val acc 0.8901  (best bal 0.9240)  lr 2.39e-03  20 s
+float ep 12  loss 0.3197  train acc 0.8925  val bal 0.9222  val acc 0.8715  (best bal 0.9240)  lr 2.29e-03  20 s
+float ep 13  loss 0.3208  train acc 0.8929  val bal 0.9279  val acc 0.9020  (best bal 0.9279)  lr 2.19e-03  20 s
+float ep 14  loss 0.3134  train acc 0.8964  val bal 0.9276  val acc 0.8795  (best bal 0.9279)  lr 2.08e-03  20 s
+float ep 15  loss 0.3076  train acc 0.8989  val bal 0.9249  val acc 0.8938  (best bal 0.9279)  lr 1.97e-03  20 s
+float ep 16  loss 0.2982  train acc 0.9012  val bal 0.9289  val acc 0.8839  (best bal 0.9289)  lr 1.86e-03  20 s
+float ep 17  loss 0.2917  train acc 0.9008  val bal 0.9294  val acc 0.8726  (best bal 0.9294)  lr 1.74e-03  20 s
+float ep 18  loss 0.2876  train acc 0.9035  val bal 0.9326  val acc 0.9059  (best bal 0.9326)  lr 1.63e-03  20 s
+float ep 19  loss 0.2803  train acc 0.9042  val bal 0.9328  val acc 0.9097  (best bal 0.9328)  lr 1.51e-03  20 s
+float ep 20  loss 0.2819  train acc 0.9041  val bal 0.9380  val acc 0.8887  (best bal 0.9380)  lr 1.39e-03  20 s
+float ep 21  loss 0.2800  train acc 0.9058  val bal 0.9364  val acc 0.8895  (best bal 0.9380)  lr 1.27e-03  21 s
+float ep 22  loss 0.2731  train acc 0.9084  val bal 0.9378  val acc 0.9017  (best bal 0.9380)  lr 1.16e-03  21 s
+float ep 23  loss 0.2686  train acc 0.9094  val bal 0.9347  val acc 0.8933  (best bal 0.9380)  lr 1.05e-03  20 s
+float ep 24  loss 0.2701  train acc 0.9095  val bal 0.9379  val acc 0.8841  (best bal 0.9380)  lr 9.35e-04  21 s
+float ep 25  loss 0.2634  train acc 0.9118  val bal 0.9402  val acc 0.8927  (best bal 0.9402)  lr 8.28e-04  21 s
+float ep 26  loss 0.2593  train acc 0.9136  val bal 0.9422  val acc 0.8991  (best bal 0.9422)  lr 7.26e-04  20 s
+float ep 27  loss 0.2516  train acc 0.9150  val bal 0.9453  val acc 0.9124  (best bal 0.9453)  lr 6.28e-04  20 s
+float ep 28  loss 0.2532  train acc 0.9137  val bal 0.9428  val acc 0.8933  (best bal 0.9453)  lr 5.35e-04  20 s
+float ep 29  loss 0.2467  train acc 0.9155  val bal 0.9418  val acc 0.8871  (best bal 0.9453)  lr 4.48e-04  20 s
+float ep 30  loss 0.2500  train acc 0.9156  val bal 0.9435  val acc 0.9082  (best bal 0.9453)  lr 3.68e-04  20 s
+float ep 31  loss 0.2395  train acc 0.9186  val bal 0.9436  val acc 0.8978  (best bal 0.9453)  lr 2.94e-04  20 s
+float ep 32  loss 0.2396  train acc 0.9171  val bal 0.9446  val acc 0.9068  (best bal 0.9453)  lr 2.28e-04  20 s
+float ep 33  loss 0.2404  train acc 0.9183  val bal 0.9456  val acc 0.9084  (best bal 0.9456)  lr 1.70e-04  20 s
+float ep 34  loss 0.2361  train acc 0.9211  val bal 0.9444  val acc 0.9112  (best bal 0.9456)  lr 1.20e-04  21 s
+float ep 35  loss 0.2406  train acc 0.9189  val bal 0.9458  val acc 0.9103  (best bal 0.9458)  lr 7.80e-05  20 s
+float ep 36  loss 0.2381  train acc 0.9194  val bal 0.9455  val acc 0.9110  (best bal 0.9458)  lr 4.50e-05  20 s
+float ep 37  loss 0.2389  train acc 0.9189  val bal 0.9449  val acc 0.9126  (best bal 0.9458)  lr 2.10e-05  20 s
+float ep 38  loss 0.2311  train acc 0.9214  val bal 0.9458  val acc 0.9110  (best bal 0.9458)  lr 5.96e-06  20 s
+float ep 39  loss 0.2419  train acc 0.9184  val bal 0.9441  val acc 0.9133  (best bal 0.9458)  lr 8.86e-08  21 s
+folded float val bal 0.9458;  int8 before QAT (PTQ) 0.9444;  scales {'input': 0.0625, 'stem': 0.0625, 'block0.depthwise': 0.0625, 'block0.pointwise': 0.0625, 'block1.depthwise': 0.0625, 'block1.pointwise': 0.0625, 'block2.depthwise': 0.0625, 'block2.pointwise': 0.0625, 'block3.depthwise': 0.0625, 'block3.pointwise': 0.125, 'pool': 0.03125, 'classifier': 0.5}
+QAT ep  0  loss 0.2346  train acc 0.9199  val bal 0.9402  val acc 0.9000  (best bal 0.9444)  21 s
+QAT ep  1  loss 0.2366  train acc 0.9188  val bal 0.9397  val acc 0.9145  (best bal 0.9444)  21 s
+QAT ep  2  loss 0.2446  train acc 0.9171  val bal 0.9452  val acc 0.9114  (best bal 0.9452)  22 s
+QAT ep  3  loss 0.2386  train acc 0.9183  val bal 0.9418  val acc 0.9238  (best bal 0.9452)  22 s
+QAT ep  4  loss 0.2320  train acc 0.9213  val bal 0.9444  val acc 0.9214  (best bal 0.9452)  22 s
+QAT ep  5  loss 0.2284  train acc 0.9215  val bal 0.9441  val acc 0.9148  (best bal 0.9452)  22 s
+QAT ep  6  loss 0.2268  train acc 0.9230  val bal 0.9415  val acc 0.9181  (best bal 0.9452)  22 s
+QAT ep  7  loss 0.2282  train acc 0.9226  val bal 0.9454  val acc 0.9165  (best bal 0.9454)  22 s
+QAT ep  8  loss 0.2309  train acc 0.9215  val bal 0.9442  val acc 0.9201  (best bal 0.9454)  22 s
+QAT ep  9  loss 0.2306  train acc 0.9212  val bal 0.9448  val acc 0.9189  (best bal 0.9454)  22 s
+int8 model exported: 22348 bytes of weights+biases -> runs/commands12/int8.pkl
