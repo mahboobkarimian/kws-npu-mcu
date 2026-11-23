@@ -1,5 +1,9 @@
 # DS-CNN keyword spotting for Arm Cortex-M and the AMD Phoenix NPU
 
+## Disclaimer
+**This coder is an AI agent for this project. No human review of the code has been done, but human supervision was in place. Before using the code and models, read and check them.**
+
+
 A depthwise-separable CNN (DS-CNN) that listens to the last 1 second of 16 kHz audio and says which keyword it heard.
 It has about 22 k weights and needs 2.6 M multiply-adds per decision.
 
